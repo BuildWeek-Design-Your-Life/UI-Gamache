@@ -1,0 +1,327 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+  border: 1px solid grey !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Playfair Display', Serif;
+  color: midnightblue;
+}
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2rem;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+}
+ul {
+  list-style-type: disc;
+  list-style-position: outside;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+nav .top-links {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  height: 90%;
+}
+nav .main-title {
+  padding: 3%;
+}
+nav a {
+  text-decoration: none;
+  background: cornflowerblue;
+  color: white;
+  width: 15%;
+  font-size: 0.9rem;
+  text-align: center;
+  border-radius: 10%;
+}
+nav a:hover {
+  background: seagreen;
+}
+nav .home,
+nav .about,
+nav .blog,
+nav .contact {
+  padding-top: 1%;
+}
+footer {
+  background: black;
+}
+footer .webpage {
+  text-align: center;
+  color: palegreen;
+}
+.cherry-blossom-photo {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 5%;
+}
+.cherry-blossom-photo .opening-photo {
+  width: 70%;
+  background: darkseagreen;
+}
+.cherry-blossom-photo .cherryBlossoms {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  margin-left: 15%;
+}
+.cherry-blossom-photo .intro {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+  margin-right: 5%;
+  width: 60%;
+}
+.something {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+.journaling-photos {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 3%;
+  padding: 2%;
+  background: darkseagreen;
+}
+.journaling-photos .computerPlant {
+  position: relative;
+  right: -6rem;
+  bottom: 1rem;
+  width: 25%;
+  height: 30%;
+}
+.journaling-photos .smartphone {
+  position: relative;
+  bottom: -1.5rem;
+  width: 25%;
+  height: 30%;
+}
+.journaling-photos .journalBook {
+  position: relative;
+  width: 30%;
+  height: 30%;
+}
+.journaling-photos .manJournal {
+  position: relative;
+  top: 2rem;
+  width: 20%;
+  height: 25%;
+}
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+}
+.services .services-top {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.services .divider,
+.services .divider-two {
+  width: 40%;
+}
+.services .services-title {
+  font-size: 3rem;
+  position: relative;
+}
+.services .listServices {
+  padding-top: 1%;
+}
+.services li {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.example-snips {
+  display: flex;
+  justify-content: space-evenly;
+  height: L 40%;
+  margin-top: 5%;
+}
+.example-snips .first-snip,
+.example-snips .second-snip,
+.example-snips .third-snip {
+  font-size: 6rem;
+}
+.photo-collage {
+  display: flex;
+  justify-content: center;
+  padding-left: 10%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+.photo-collage .camping-photo {
+  position: relative;
+  width: 20%;
+}
+.photo-collage .yoga-photo {
+  position: relative;
+  left: -5%;
+  top: 4rem;
+  width: 30%;
+  height: 30%;
+}
+.photo-collage .reading-photo {
+  position: relative;
+  left: -10%;
+  top: 2rem;
+  width: 30%;
+  height: 30%;
+}
+.photo-collage .rock-climbing-photo {
+  position: relative;
+  left: -10%;
+  top: 3rem;
+  width: 25%;
+  height: 25%;
+}
