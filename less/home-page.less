@@ -1,41 +1,66 @@
 
-
+//styling for opening photo and mission statement
 .cherry-blossom-photo{
     display: flex;
     justify-content: space-evenly;
     margin-left: 5%;
+    @media @mobile{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+    }
+   
     .opening-photo{
         width: 70%;
         background: darkseagreen;
+        @media @mobile{
+            margin-left: 10%;
+        }
     }
     .cherryBlossoms{
         position: relative;
         top: 10%;
-        
         width: 100%;
         margin-left: 15%;
+        
     }
     
     .intro{
         display: flex;
         flex-direction: column;
+        align-items: center;
         margin-left: 15%;
         margin-right: 5%;
         width: 60%;
+        margin-top: 5%;
+        @media @mobile{
+            width: 100%;
+            margin-left: 0%;
+        }
+        .mission-statement{
+            margin-bottom: 5%;
+        }
+    }
+}
+
+
+//styling for healine after intro
+.something{
+	display: flex;
+	justify-content: center;
+    margin-top: 3%;
+    border-top: 1px solid darkseagreen;
+    border-bottom: 1px solid darkseagreen;
+    .why{
+        @media @mobile{
+            font-size: 1.5rem;
+        }
     }
 }
 
 
 
-.something{
-	display: flex;
-	justify-content: center;
-	margin-top: 3%;
-}
-
-
-
-
+//styling for journaling photos
 .journaling-photos{
 	display: flex;
 	justify-content: space-around;
@@ -49,6 +74,9 @@
         bottom: 1rem;
         width: 25%;
         height: 30%;
+        @media @mobile{
+            display: none;
+        }
     }
     .smartphone{
         position: relative;
@@ -70,53 +98,63 @@
     }
 }
 
+
+//styling for services list
 .services{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 5%;
+    padding-bottom: 5%;
     .services-top{
         display: flex;
         justify-content: space-evenly;
         width: 100%;
+        border-top: 1px solid darkseagreen;
+        padding-top: 2%;
     }
     .divider, .divider-two{
         width: 40%;
+        @media @mobile{
+            width: 30%;
+        }
     }
     .services-title{
         font-size: 3rem;
         position: relative;
+        
     }
     .listServices{
         padding-top: 1%;
+        @media @mobile{
+            width: 90%;
+        }
     }
     li{
         padding-top: 1%; 
         padding-bottom: 1%;
     }
 }
-.example-snips{
-    display: flex;
-    justify-content: space-evenly;
-    height:L 40%;
-    
-    margin-top: 5%;
 
-    .first-snip, .second-snip, .third-snip{
-        font-size: 6rem;
-    }
-}
-
+//styling for bottom photos
 .photo-collage{
     display: flex;
     justify-content: center;
     padding-left: 10%;
     padding-top: 2.5%;
     padding-bottom: 2.5%;
+    border-top: 1px solid darkseagreen;
+    @media @mobile{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 0%;
+    }
     .camping-photo{
         position: relative;
         width: 20%;
-        // left: 15%;
+       @media @mobile{
+           display: none;
+       }
     }
     .yoga-photo{
         position: relative;
@@ -124,6 +162,9 @@
         top: 4rem;
         width: 30%;
         height: 30%;
+        @media @mobile{
+            top: 1rem;
+        }
     }
     .reading-photo{
         position: relative;
@@ -131,6 +172,10 @@
         top: 2rem;
         width: 30%;
         height: 30%;
+        @media @mobile{
+            left: -2%;
+            top: .5rem;
+        }
     }
     .rock-climbing-photo{
         position: relative;
@@ -138,5 +183,9 @@
         top: 3rem;
         width: 25%;
         height: 25%;
+        @media @mobile{
+            left: 0%;
+            top: 1.5rem;
+        }
     }
 }

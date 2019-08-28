@@ -1,6 +1,11 @@
 nav{
 	display: flex;
     justify-content: space-around;
+    @media @mobile{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
     .top-links{
         width: 40%;
         display: flex;
@@ -8,6 +13,9 @@ nav{
         padding-top: 1%;
         padding-bottom: 1%;
         height: 90%;
+        @media @mobile{
+            width: 100%;
+        }
     }
     .main-title{
         padding: 3%;
