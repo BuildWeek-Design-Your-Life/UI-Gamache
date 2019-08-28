@@ -128,7 +128,6 @@ table {
 }
 * {
   box-sizing: border-box;
-  border: 1px solid grey !important;
 }
 h1,
 h2,
@@ -161,6 +160,12 @@ nav {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 nav .top-links {
   width: 40%;
   display: flex;
@@ -168,6 +173,11 @@ nav .top-links {
   padding-top: 1%;
   padding-bottom: 1%;
   height: 90%;
+}
+@media (max-width: 500px) {
+  nav .top-links {
+    width: 100%;
+  }
 }
 nav .main-title {
   padding: 3%;
@@ -202,9 +212,21 @@ footer .webpage {
   justify-content: space-evenly;
   margin-left: 5%;
 }
+@media (max-width: 500px) {
+  .cherry-blossom-photo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0%;
+  }
+}
 .cherry-blossom-photo .opening-photo {
   width: 70%;
   background: darkseagreen;
+}
+@media (max-width: 500px) {
+  .cherry-blossom-photo .opening-photo {
+    margin-left: 10%;
+  }
 }
 .cherry-blossom-photo .cherryBlossoms {
   position: relative;
@@ -215,14 +237,32 @@ footer .webpage {
 .cherry-blossom-photo .intro {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-left: 15%;
   margin-right: 5%;
   width: 60%;
+  margin-top: 5%;
+}
+@media (max-width: 500px) {
+  .cherry-blossom-photo .intro {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+.cherry-blossom-photo .intro .mission-statement {
+  margin-bottom: 5%;
 }
 .something {
   display: flex;
   justify-content: center;
   margin-top: 3%;
+  border-top: 1px solid darkseagreen;
+  border-bottom: 1px solid darkseagreen;
+}
+@media (max-width: 500px) {
+  .something .why {
+    font-size: 1.5rem;
+  }
 }
 .journaling-photos {
   display: flex;
@@ -238,6 +278,11 @@ footer .webpage {
   bottom: 1rem;
   width: 25%;
   height: 30%;
+}
+@media (max-width: 500px) {
+  .journaling-photos .computerPlant {
+    display: none;
+  }
 }
 .journaling-photos .smartphone {
   position: relative;
@@ -261,15 +306,24 @@ footer .webpage {
   flex-direction: column;
   align-items: center;
   padding-top: 5%;
+  padding-bottom: 5%;
 }
 .services .services-top {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+  border-top: 1px solid darkseagreen;
+  padding-top: 2%;
 }
 .services .divider,
 .services .divider-two {
   width: 40%;
+}
+@media (max-width: 500px) {
+  .services .divider,
+  .services .divider-two {
+    width: 30%;
+  }
 }
 .services .services-title {
   font-size: 3rem;
@@ -278,20 +332,14 @@ footer .webpage {
 .services .listServices {
   padding-top: 1%;
 }
+@media (max-width: 500px) {
+  .services .listServices {
+    width: 90%;
+  }
+}
 .services li {
   padding-top: 1%;
   padding-bottom: 1%;
-}
-.example-snips {
-  display: flex;
-  justify-content: space-evenly;
-  height: L 40%;
-  margin-top: 5%;
-}
-.example-snips .first-snip,
-.example-snips .second-snip,
-.example-snips .third-snip {
-  font-size: 6rem;
 }
 .photo-collage {
   display: flex;
@@ -299,10 +347,23 @@ footer .webpage {
   padding-left: 10%;
   padding-top: 2.5%;
   padding-bottom: 2.5%;
+  border-top: 1px solid darkseagreen;
+}
+@media (max-width: 500px) {
+  .photo-collage {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0%;
+  }
 }
 .photo-collage .camping-photo {
   position: relative;
   width: 20%;
+}
+@media (max-width: 500px) {
+  .photo-collage .camping-photo {
+    display: none;
+  }
 }
 .photo-collage .yoga-photo {
   position: relative;
@@ -311,6 +372,11 @@ footer .webpage {
   width: 30%;
   height: 30%;
 }
+@media (max-width: 500px) {
+  .photo-collage .yoga-photo {
+    top: 1rem;
+  }
+}
 .photo-collage .reading-photo {
   position: relative;
   left: -10%;
@@ -318,10 +384,22 @@ footer .webpage {
   width: 30%;
   height: 30%;
 }
+@media (max-width: 500px) {
+  .photo-collage .reading-photo {
+    left: -2%;
+    top: 0.5rem;
+  }
+}
 .photo-collage .rock-climbing-photo {
   position: relative;
   left: -10%;
   top: 3rem;
   width: 25%;
   height: 25%;
+}
+@media (max-width: 500px) {
+  .photo-collage .rock-climbing-photo {
+    left: 0%;
+    top: 1.5rem;
+  }
 }
