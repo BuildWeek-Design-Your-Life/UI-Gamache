@@ -128,7 +128,6 @@ table {
 }
 * {
   box-sizing: border-box;
-  border: 1px solid grey !important;
 }
 h1,
 h2,
@@ -185,7 +184,7 @@ nav .main-title {
 }
 nav a {
   text-decoration: none;
-  background: cornflowerblue;
+  background: midnightblue;
   color: white;
   width: 15%;
   font-size: 0.9rem;
@@ -202,11 +201,11 @@ nav .contact {
   padding-top: 1%;
 }
 footer {
-  background: black;
+  background: midnightblue;
 }
 footer .webpage {
   text-align: center;
-  color: palegreen;
+  color: darkseagreen;
 }
 .cherry-blossom-photo {
   display: flex;
