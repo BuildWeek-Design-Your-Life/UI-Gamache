@@ -274,10 +274,10 @@ footer .webpage {
 }
 .journaling-photos .computerPlant {
   position: relative;
-  right: -6rem;
   bottom: 1rem;
   width: 25%;
   height: 30%;
+  right: -1%;
 }
 @media (max-width: 500px) {
   .journaling-photos .computerPlant {
@@ -289,17 +289,20 @@ footer .webpage {
   bottom: -1.5rem;
   width: 25%;
   height: 30%;
+  left: -1%;
 }
 .journaling-photos .journalBook {
   position: relative;
   width: 30%;
   height: 30%;
+  right: 1%;
 }
 .journaling-photos .manJournal {
   position: relative;
   top: 2rem;
   width: 20%;
   height: 25%;
+  right: 1%;
 }
 .services {
   display: flex;
