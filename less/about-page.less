@@ -9,6 +9,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    .katies-github{
+        font-size: 1.3rem;
+        border-radius: 5%;
+        @media @mobile{
+            width: 50%;
+        }
+    }
 }
 
 //styling back-end section
@@ -22,8 +29,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    .blakes-github{
+        font-size: 1.3rem;
+        border-radius: 5%;
+        @media @mobile{
+            width: 50%;
+        }
+    }
     .blake{
         width: 15%;
+        @media @mobile{
+            width: 50%;
+        }
     }
 }
 
@@ -33,18 +50,31 @@
     justify-content: center;
     margin-top: 5%; 
     background: darkseagreen;
+    .fe-3{
+        @media @mobile{
+            font-size: 3.3rem;
+        }
+    }
 }
 .front-end-3{
     display: flex;
     justify-content: space-around;
-    .first-front-end-3{
+    
+    .first-front-end-3, .second-front-end-3{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
-    .second-front-end-3{
-        display: flex;
-        flex-direction: column
+    .jasons-github{
+        font-size: 1.3rem;
+        border-radius: 5%;
+        width: 80%;
     }
+}
+.richards-github{
+    font-size: 1.3rem;
+    border-radius: 5%;
+    width: 80%;
 }
 
 //styling front end unit 2 section
@@ -53,42 +83,62 @@
     justify-content: center;
     margin-top: 5%;
     background: darkseagreen;
+    .fe-2{
+        @media @mobile{
+            font-size: 3.3rem;
+        }
+    }
 }
 .front-end-2{
     display: flex;
     justify-content: space-around;
-    .first-front-end-2{
+    .first-front-end-2, .second-front-end-2{
         display: flex;
         flex-direction: column;
-        
-    }
-    .second-front-end-2{
-        display: flex;
-        flex-direction: column;
+        align-items: center;
     }
 }
-
+.adrians-github, .daniels-github{
+    font-size: 1.3rem;
+    border-radius: 5%;
+    width: 80%;
+}
 //styling for web ui section
 .headline-web-ui{
     display: flex;
     justify-content: center;
     margin-top: 5%;
     background: darkseagreen;
+    
 }
 .web-ui{
     display: flex;
     justify-content: space-around;
-    .first-web-ui{
-        display: flex;
-        flex-direction: column;
+    @media @mobile{
+        flex-wrap: wrap;
     }
-    .second-web-ui{
+    .first-web-ui, .second-web-ui, .third-web-ui{
         display: flex;
         flex-direction: column;
-        
-    }
-    .third-web-ui{
-        display: flex;
-        flex-direction: column;
+        align-items: center;
     }
 }
+.joes-github, .taras-github, .skylers-github{
+    font-size: 1.3rem;
+    border-radius: 5%;
+    width: 80%;
+}
+//styling for github links
+a{
+    text-decoration: none;
+    background: midnightblue;
+    color: white;
+    width: 15%;
+    font-size: .9rem;
+    text-align: center;
+    border-radius: 10%;
+   
+}
+a:hover{
+    background: seagreen;
+}            

@@ -164,6 +164,7 @@ nav {
   nav {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
   }
 }
 nav .top-links {
@@ -219,6 +220,15 @@ footer .webpage {
   flex-direction: column;
   align-items: center;
 }
+.project-lead .katies-github {
+  font-size: 1.3rem;
+  border-radius: 5%;
+}
+@media (max-width: 500px) {
+  .project-lead .katies-github {
+    width: 50%;
+  }
+}
 .headline-be {
   display: flex;
   justify-content: center;
@@ -230,8 +240,22 @@ footer .webpage {
   flex-direction: column;
   align-items: center;
 }
+.back-end .blakes-github {
+  font-size: 1.3rem;
+  border-radius: 5%;
+}
+@media (max-width: 500px) {
+  .back-end .blakes-github {
+    width: 50%;
+  }
+}
 .back-end .blake {
   width: 15%;
+}
+@media (max-width: 500px) {
+  .back-end .blake {
+    width: 50%;
+  }
 }
 .headline-fe3 {
   display: flex;
@@ -239,17 +263,30 @@ footer .webpage {
   margin-top: 5%;
   background: darkseagreen;
 }
+@media (max-width: 500px) {
+  .headline-fe3 .fe-3 {
+    font-size: 3.3rem;
+  }
+}
 .front-end-3 {
   display: flex;
   justify-content: space-around;
 }
-.front-end-3 .first-front-end-3 {
-  display: flex;
-  flex-direction: column;
-}
+.front-end-3 .first-front-end-3,
 .front-end-3 .second-front-end-3 {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.front-end-3 .jasons-github {
+  font-size: 1.3rem;
+  border-radius: 5%;
+  width: 80%;
+}
+.richards-github {
+  font-size: 1.3rem;
+  border-radius: 5%;
+  width: 80%;
 }
 .headline-fe2 {
   display: flex;
@@ -257,17 +294,26 @@ footer .webpage {
   margin-top: 5%;
   background: darkseagreen;
 }
+@media (max-width: 500px) {
+  .headline-fe2 .fe-2 {
+    font-size: 3.3rem;
+  }
+}
 .front-end-2 {
   display: flex;
   justify-content: space-around;
 }
-.front-end-2 .first-front-end-2 {
-  display: flex;
-  flex-direction: column;
-}
+.front-end-2 .first-front-end-2,
 .front-end-2 .second-front-end-2 {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.adrians-github,
+.daniels-github {
+  font-size: 1.3rem;
+  border-radius: 5%;
+  width: 80%;
 }
 .headline-web-ui {
   display: flex;
@@ -279,15 +325,34 @@ footer .webpage {
   display: flex;
   justify-content: space-around;
 }
-.web-ui .first-web-ui {
-  display: flex;
-  flex-direction: column;
+@media (max-width: 500px) {
+  .web-ui {
+    flex-wrap: wrap;
+  }
 }
-.web-ui .second-web-ui {
-  display: flex;
-  flex-direction: column;
-}
+.web-ui .first-web-ui,
+.web-ui .second-web-ui,
 .web-ui .third-web-ui {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.joes-github,
+.taras-github,
+.skylers-github {
+  font-size: 1.3rem;
+  border-radius: 5%;
+  width: 80%;
+}
+a {
+  text-decoration: none;
+  background: midnightblue;
+  color: white;
+  width: 15%;
+  font-size: 0.9rem;
+  text-align: center;
+  border-radius: 10%;
+}
+a:hover {
+  background: seagreen;
 }
