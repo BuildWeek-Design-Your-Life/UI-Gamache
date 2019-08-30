@@ -4,7 +4,7 @@
 
 I have created two web pages for our Build Week Project - "Design Your Life." The index.html page is the main marketing page. The about-index.html page is the About the Team page. Each page has its own .less files in the less directory as well as .css files in the css directory. All of the image files are located in the img directory. 
 
-#Project Description
+# Project Description
 
 We were tasked with creating an application that helps people figure out what brings them joy. After logging in, you are able to record your activities and rate them on a number scale as to how much enjoyment they bring you. 
 
